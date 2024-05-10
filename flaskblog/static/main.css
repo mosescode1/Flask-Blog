@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: #5f788a;
+}
+.container {
+  margin: 0 200px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img{
+  display: block;
+  width: 100%;
+}
+.header-container {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  /* border: 2px solid green; */
+}
+.logo {
+  font-size: 15px;
+  color: white;
+  margin-right: 20px;
+  font-weight: 900;
+  border: 2px solid white;
+  padding: 2px;
+  outline: 2px solid white;
+  outline-offset: 5px;
+  border-radius: 5px;
+}
+
+.logo:hover {
+  background: white;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+  /* padding: 2px; */
+  outline: 2px solid white;
+  outline-offset: 5px;
+}
+nav {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 17px;
+}
+.left-side a,
+.right-side a {
+  color: #b2fff2;
+  margin-right: 10px;
+}
+
+/*========================= 
+    REGISTRATION PAGE 
+============================
+*/
+.reg-container {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 5;
+  flex-wrap: wrap-reverse;
+}
+form {
+  /* border: 2px solid green; */
+  flex-grow: 1;
+}
+form h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.form-container {
+  line-height: 1.7;
+  width: 50%;
+  margin: 0 auto;
+  /* border: 2px solid yellow; */
+}
+form .reg-form label {
+  font-size: 1.2rem;
+}
+form .reg-form input {
+  padding: 10px;
+  width: 90%;
+}
+form .form-btn {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+form .form-btn .btn {
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  background-color: #5f788a;
+  color: white;
+  padding: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+form .form-btn .btn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+.text-content p {
+  display: inline;
+}
+.text-content a {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* REG +  RIght section */
+.right-section{
+  display: grid;
+  align-items: center;
+}
+.right-section img {
+  width: 450px;
+}
+/* 
+==================
+Login PAGE
+==================
+*/
+
+.login-container {
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  /* border: 2px solid red; */
+}
+.login-form {
+  width: 65%;
+  margin: 0 auto;
+  /* border: 2px solid green; */
+}
+.login-form label {
+  font-size: 1.2rem;
+}
+.login-form input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #5f788a;
+  border-radius: 10px;
+}
+
+.login-form .text-content {
+  display: flex;
+}
+.login-form .check-box {
+  margin-left: 5px;
+  width: 0.8rem;
+}
+
+.alert-danger{
+  background-color: red;
+  /* border-radius: 10px; */
+  color: white;
+  padding: 0.167rem;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.alert-success {
+  /* position: absolute; */
+  background-color: rgb(88, 186, 88);
+  /* border-radius: 10px; */
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  /* top: 15%;
+  left: 50%;
+  transform: translate(-15%, -50%); */
+}
+
+.alert-message {
+  background-color: rgb(249, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* 
+================
+Blog post
+=================
+*/
+
+.blog-post {
+  margin: 10px;
+  width: 350px;
+  /* font-size: 16px; */
+}
+.post {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.post .author-date span {
+  float: right;
+}
+
+.invalid-feedback span {
+  color: red;
+  font-weight: 800;
+}

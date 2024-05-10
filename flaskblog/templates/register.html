@@ -1,0 +1,84 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container">
+  <div class="reg-container">
+    <form action="" method="POST">
+      {{ form.hidden_tag() }}
+      <h1>{{ title }}</h1>
+      <div class="form-container">
+        <!-- firstname -->
+        <div class="reg-form">
+          {{ form.firstname.label('Firstname: ') }} <br />
+          <!--  -->
+          {% if form.firstname.errors %} {{ form.firstname(class="invalid")}}
+          <div class="invalid-feedback">
+            {% for error in form.firstname.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.firstname }} {% endif %}
+        </div>
+        <!-- Lastname -->
+        <div class="reg-form">
+          {{ form.lastname.label('Lastname: ') }} <br />
+          <!--  -->
+          {% if form.lastname.errors %} {{ form.lastname(class="invalid")}}
+          <div class="invalid-feedback">
+            {% for error in form.lastname.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.lastname }} {% endif %}
+        </div>
+        <!-- EMAIL -->
+        <div class="reg-form">
+          {{ form.email.label('Email: ')}} <br />
+          <!--  -->
+          {% if form.email.errors %} {{ form.email(class="invalid")}}
+          <div class="invalid-feedback">
+            {% for error in form.email.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.email }} {% endif %}
+        </div>
+        <!-- PASSWORD -->
+        <div class="reg-form">
+          {{ form.password.label('Password: ')}}<br />
+          {% if form.password.errors %} {{ form.password(class="invalid")}}
+          <div class="invalid-feedback">
+            {% for error in form.password.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.password }} {% endif %}
+        </div>
+        <!-- onfirm pa -->
+        <div class="reg-form">
+          {{ form.confirm_password.label('Confirm Password: ')}} <br />
+          {% if form.confirm_password.errors %} {{
+          form.confirm_password(class="invalid")}}
+          <div class="invalid-feedback">
+            {% for error in form.confirm_password.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.confirm_password }} {% endif %}
+        </div>
+        <!-- registraion btn -->
+        <div class="form-btn">{{ form.submit(class="btn") }}</div>
+        <!-- route to login page -->
+        <div class="text-content">
+          <p>Already Have An Account ?</p>
+          <a href="{{ url_for('login' ) }}">Login</a>
+        </div>
+      </div>
+    </form>
+
+    <!-- aside content  -->
+    <section class="right-section">
+      <img src="/static/reg1.AVIF" alt="register" srcset="" />
+    </section>
+  </div>
+</div>
+
+{% endblock content %}

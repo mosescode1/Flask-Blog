@@ -1,0 +1,32 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container">
+  <div class="login-container">
+    <form action="" method="POST">
+      {{ form.hidden_tag() }}
+      <h1>{{ title }}</h1>
+      <div class="login-form">
+        <!-- EMAIL -->
+        <div class="reg-form">
+          {{ form.email.label('Email: ')}} <br />
+          {{ form.email }}
+        </div> 
+
+        <div class="form-box">
+          {{ form.password.label('Password:')}}<br />
+          {{ form.password }}
+        </div>
+        <!-- checkbox -->
+        <div class="text-content">
+          {{ form.remember_me.label('Remember Me')}} {{
+          form.remember_me(class="check-box")}}
+        </div>
+        <div class="form-btn">{{ form.submit(class="btn login-btn") }}</div>
+      </div>
+    </form>
+    <section class="right-side">
+      <img src="/static/login.jpg" alt="login" />
+    </section>
+  </div>
+</div>
+
+{% endblock content %}

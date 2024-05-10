@@ -1,0 +1,17 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container">
+  <div class="blog-post">
+    {% for post in posts %}
+    <div class="post">
+      <p class="author-date">
+        Author: {{ post.author }} <span>Date: {{ post.created_at }}</span>
+      </p>
+      <hr />
+
+      <p>Title: {{ post.title }}</p>
+      <p>Content: {{ post.content }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
