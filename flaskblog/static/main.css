@@ -221,3 +221,88 @@ Blog post
   color: red;
   font-weight: 800;
 }
+
+
+/* 
++++++++++++++++++
+  REPONSIVENESS 
+  MEDIA QUERIES
++++++++++++++++++
+*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 100px;
+  }
+  .reg-container {
+    flex-direction: column;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .right-section img {
+    display: none;
+  }
+  .right-side img{
+    width: 350px;
+  }
+}
+@media screen and (max-width: 768px){
+  .container {
+    margin: 0 50px;
+  }
+  .reg-container {
+    flex-direction: column;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .right-section img {
+    display: none;
+  }
+  .right-side img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .container {
+    margin: 0 20px;
+  }
+  .reg-container {
+    flex-direction: column;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .right-section img {
+    display: none;
+  }
+  .right-side img{
+    display: none;
+  }
+  .login-form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 0 10px;
+  }
+  .reg-container {
+    flex-direction: column;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .right-section img {
+    display: none;
+  }
+ 
+}
+@media screen and (max-width: 320px) {
+
+  nav a{
+    font-size: 12px;
+  }
+}
